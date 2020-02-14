@@ -1,5 +1,6 @@
 import React from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
+import { hot } from 'react-hot-loader'
 import NotFound from './components/NotFound';
 // <Route path='/:handle' component={} />
 const Routes = (props) => (
@@ -10,5 +11,4 @@ const Routes = (props) => (
 
 
 
-
-export default Routes;
+export default hot(module)(Routes)
